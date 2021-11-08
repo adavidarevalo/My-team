@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <PxHeader/>
+    <router-view/>
+    <PxFooter/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PxHeader from './components/layout/PxHeader.vue'
+import PxFooter from './components/layout/PxFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PxHeader,
+    PxFooter
   }
 }
 </script>
@@ -21,6 +26,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0px;
+}
+body{
+  margin: 0px;
+}
+a, button{
+  cursor: pointer;
+  text-decoration: none;
 }
 </style>
