@@ -35,12 +35,14 @@ div{
     width: 80%;
     margin: 0 auto;
     max-width: 900px;
+    max-width: 1200px;
 }
 h2{
     font-size: 2.5rem;
     letter-spacing: 2px;
     font-weight: 900;
     margin: 0px;
+    animation: fadeInLeft 1s both;
 }
 span{
     color: #F57D7D;
@@ -48,6 +50,7 @@ span{
 p{
     font-size: 1.2rem;
     line-height: 25px;
+    animation: fadeInRight 1.5s both;
 }
 .MainHome-Svg{
     position: absolute;
@@ -76,4 +79,29 @@ p{
         line-height: 45px;
     }
 }
+
+  @keyframes fadeInLeft {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+  @keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
 </style>

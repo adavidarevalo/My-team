@@ -73,6 +73,9 @@ section{
     width: 80%;
     margin: 0 auto;
 }
+.Container{
+    max-width: 1200px;
+}
 p{
     color: hsla(0,0%,100%,.6);
     margin: 0px;

@@ -59,11 +59,13 @@ span{
 }
 .Testimony-Background{
     align-self: baseline;
+    max-width: 1100px;
 }
 h2{
     font-size: 2.1rem;
     width: 80%;
     line-height: 40px;
+    max-width: 574px;
 }
 img{
     width: 62px;
@@ -87,6 +89,9 @@ h4{
     background-repeat: no-repeat;
     background-position: center;
     min-height: 66px;
+}
+.Testimony-Container{
+    max-width: 1200px;
 }
 .Testimony-Background_footer{
     align-self: end;

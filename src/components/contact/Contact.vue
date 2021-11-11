@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="Container">
-        <div>
+        <div class="Contact-Details">
             <h2>Contact</h2>
             <h3>Ask us about</h3>
             <table>
@@ -59,6 +59,9 @@ section{
     max-width: 1146px;
     margin: 0 auto;
 }
+.Contact-Details{
+    animation: fadeInLeft 1s both;
+}
 h2{
     color: white;
     font-size: 3rem;
@@ -97,6 +100,7 @@ form{
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    animation: fadeInRight 1.5s both;
 }
 input,
 textarea{
@@ -129,4 +133,29 @@ textarea{
         max-height: 460px;
     }
 }
+
+  @keyframes fadeInLeft {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+  @keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
 </style>

@@ -79,7 +79,9 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
 }
+
 .NavAndLogo{
     display: flex;
     align-items: center;

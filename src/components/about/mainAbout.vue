@@ -35,18 +35,21 @@ div{
 h1{
     font-size: 2rem;
     margin: 0px;
+    animation: fadeInLeft 1s both;
 }
 p{
     font-size: 1.1rem;
     font-weight: 600;
+    animation: fadeInRight 1.5s both;
 }
 @media (min-width: 750px){
     div{
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 40px;
     }
     h1{
-        font-size: 4rem;
+        font-size: 5rem;
         margin-right: 25px;
     }
     p{
@@ -58,4 +61,29 @@ p{
         align-items: center;
     }
 }
+
+  @keyframes fadeInLeft {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+  @keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
 </style>

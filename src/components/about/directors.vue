@@ -58,6 +58,8 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     padding-block: 20px 100px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .flip-Element{
     position: relative;

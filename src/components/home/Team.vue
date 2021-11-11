@@ -1,5 +1,6 @@
 <template>
     <section>
+        <div class="Container">
         <div class="Team-Header">
             <h3>Build & manage distributed teams like no one else.</h3>
             <TeamBackground/>
@@ -16,6 +17,7 @@
                 <p>{{item.paragraph}}</p>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 </template>
@@ -49,6 +51,10 @@ section{
 .Team-Header{
     display: flex;
 }
+.Container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 h3{
     font-size: 2rem;
     text-align: initial;
@@ -80,7 +86,7 @@ p{
     }
 }
 @media (min-width: 1000px){
-    section{
+    .Container{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
